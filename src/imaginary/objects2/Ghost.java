@@ -6,16 +6,19 @@ package imaginary.objects2;
  * @author cgonz
  */
 public class Ghost implements UndeadBeing {
+
     private String name;
-    
-    public void walkThroughWall(){
+
+    public void walkThroughWall() {
         System.out.println("I am walking through this wall.");
     }
-    public void dropTempuratureOfSurroundings(){
+
+    public void dropTempuratureOfSurroundings() {
         System.out.println("The tempurature has dropped.");
     }
+
     @Override
-    public void hauntTheLiving(){
+    public void hauntTheLiving() {
         System.out.println("Booooooo...");
     }
 
@@ -34,5 +37,5 @@ public class Ghost implements UndeadBeing {
     public void riseFromDead() {
         System.out.println("I rose from the dead as a ghost");
     }
-    
+
 }
