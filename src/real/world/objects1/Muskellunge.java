@@ -6,8 +6,9 @@ package real.world.objects1;
  * @author cgonz
  */
 public class Muskellunge extends FreshwaterFish {
+
     private String bodyPattern;
-    
+
     @Override
     public void swim() {
         System.out.println("I swim horizontally and use my fins");
@@ -27,5 +28,5 @@ public class Muskellunge extends FreshwaterFish {
         //requires validation
         this.bodyPattern = bodyPattern;
     }
-    
+
 }

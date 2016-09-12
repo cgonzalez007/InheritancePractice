@@ -7,12 +7,12 @@ package real.world.objects1;
  */
 public interface Animal {
 
-    public void setName(String name);
+    public abstract void setName(String name);
 
-    public String getName();
+    public abstract String getName();
 
-    public void breathe();
+    public abstract void breathe();
 
-    public void searchForFood();
+    public abstract void searchForFood();
 
 }

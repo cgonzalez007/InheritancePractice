@@ -9,11 +9,12 @@ public interface Fish extends Animal {
 
     public abstract void swim();
 
-    public String getFinClassification();
+    public abstract String getFinClassification();
 
-    public void setFinClassification(String finClassification);
+    public abstract void setFinClassification(String finClassification);
     
-    public void setLengthFromSnoutToTail(double lengthFromSnoutToTail);
+    public abstract void setLengthFromSnoutToTail(double lengthFromSnoutToTail);
     
-    public double getLengthFromSnoutToTail();
+    public abstract double getLengthFromSnoutToTail();
+    
 }
