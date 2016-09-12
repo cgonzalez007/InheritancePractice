@@ -7,7 +7,16 @@ package real.world.objects1;
  */
 public class Muskellunge extends FreshwaterFish {
 
-    private String bodyPattern;
+    private String muskieBodyPattern;
+    
+    public String getMuskieBodyPattern() {
+        return muskieBodyPattern;
+    }
+
+    public void setMuskieBodyPattern(String muskieBodyPattern) {
+        //requires validation
+        this.muskieBodyPattern = muskieBodyPattern;
+    }
 
     @Override
     public void swim() {
@@ -20,13 +29,16 @@ public class Muskellunge extends FreshwaterFish {
                 + " birds and frogs");
     }
 
-    public String getBodyPattern() {
-        return bodyPattern;
+    @Override
+    public void takeInFreshwater() {
+        System.out.println("I'm taking in Freshwater since I'm a freshwater "
+                + "fish");
     }
 
-    public void setBodyPattern(String bodyPattern) {
-        //requires validation
-        this.bodyPattern = bodyPattern;
+    @Override
+    public void takeInOxygen() {
+        System.out.println("I Breathe through my gills.");
+
     }
 
 }

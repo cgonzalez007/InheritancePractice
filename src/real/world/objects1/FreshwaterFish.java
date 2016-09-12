@@ -20,16 +20,7 @@ public abstract class FreshwaterFish implements Fish {
     public FreshwaterFish() {
     }
 
-    public void takeInFreshwater() {
-        System.out.println("I'm taking in Freshwater since I'm a freshwater "
-                + "fish");
-    }
-
-    @Override
-    public void breathe() {
-        System.out.println("I Breathe through my gills");
-
-    }
+    public abstract void takeInFreshwater();
 
     @Override
     public double getLengthFromSnoutToTail() {

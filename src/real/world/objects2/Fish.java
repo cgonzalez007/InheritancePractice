@@ -30,10 +30,4 @@ public abstract class Fish extends Animal {
         this.finClassification = finClassification;
     }
 
-    @Override
-    public void breathe() {
-        System.out.println("I Breathe through my gills");
-
-    }
-
 }
