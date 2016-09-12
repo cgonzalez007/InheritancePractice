@@ -1,5 +1,5 @@
 
-package imaginary.objects;
+package imaginary.objects1;
 
 /**
  *
@@ -8,6 +8,5 @@ package imaginary.objects;
 public interface Quadrilateral extends TwoDimensionalShape {
     public final int NUMBER_OF_SIDES = 4;
     public final int SUM_OF_INTERIOR_ANGLES = 360;
-    
-    
+
 }

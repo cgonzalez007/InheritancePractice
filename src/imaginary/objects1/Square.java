@@ -1,5 +1,5 @@
 
-package imaginary.objects;
+package imaginary.objects1;
 
 /**
  *
