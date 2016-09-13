@@ -6,6 +6,8 @@ package real.world.objects3;
  * @author cgonz
  */
 public class Muskellunge extends FreshwaterFish {
+    // Certain muskie have certain patterns on their bodies
+    // ex: spotted, tiger stripes, barred
 
     private String muskieBodyPattern;
 
@@ -18,7 +20,8 @@ public class Muskellunge extends FreshwaterFish {
         this.muskieBodyPattern = muskieBodyPattern;
     }
 
-    //Overwritten methods to avoid "Unknown" being inherited 
+    // ****NOTE****
+    //These methods need to be OVERRIDDEN to avoid "Unknown" being inherited 
     @Override
     public void swim() {
         System.out.println("I swim horizontally and use my fins");

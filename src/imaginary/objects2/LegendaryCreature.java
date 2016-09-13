@@ -7,6 +7,7 @@ package imaginary.objects2;
  */
 public interface LegendaryCreature {
 
+    // Dictated that every Legendary creature should have a name
     public void setName(String name);
 
     public String getName();

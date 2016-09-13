@@ -17,6 +17,7 @@ package real.world.objects3;
  */
 public class Animal {
 
+    // Dictating that all Animals need to have a name
     private String name;
 
     public String getName() {
@@ -27,13 +28,18 @@ public class Animal {
         //requires validation
         this.name = name;
     }
-
-    //Exactly why concrete classes as super classes is BAD. 
+    // ****NOTE****
+    //This is exactly why concrete classes as super classes is a BAD idea. 
     //These will need to be overridden
+
+    // All animals have a way of taking in oxygen. Notice I did not use the word
+    // "breathe" for the method name. 
     public void takeInOxygen() {
         System.out.println("Unknown");
     }
 
+    // All animals need to find food. As to what and how, we will leave for the 
+    // concrete classes
     public void searchForFood() {
         System.out.println("Unknown");
     }

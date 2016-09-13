@@ -9,10 +9,12 @@ public class Ghost implements UndeadBeing {
 
     private String name;
 
+    // Dictated that ghosts have the special ability to walk through walls
     public void walkThroughWall() {
         System.out.println("I am walking through this wall.");
     }
 
+    // Ghosts are known to make the room temperature drop significantly
     public void dropTempuratureOfSurroundings() {
         System.out.println("The tempurature has dropped.");
     }

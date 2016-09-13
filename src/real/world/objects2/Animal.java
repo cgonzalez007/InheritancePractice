@@ -14,6 +14,7 @@ package real.world.objects2;
  */
 public abstract class Animal {
 
+    // Dictating here that all animals should have a name
     private String name;
 
     public String getName() {
@@ -25,7 +26,11 @@ public abstract class Animal {
         this.name = name;
     }
 
+    // All animals have a way of taking in oxygen. Notice I did not use the word
+    // "breathe" for the method name. 
     public abstract void takeInOxygen();
 
+    // All animals need to find food. As to what and how, we will leave for the 
+    // concrete classes
     public abstract void searchForFood();
 }

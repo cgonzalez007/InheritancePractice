@@ -7,11 +7,15 @@ package real.world.objects3;
  */
 public class Fish extends Animal {
 
+    // All Fish have some sort of fin classification as well as a length 
+    // from their snout to their tail
     private String finClassification;
     private double lengthFromSnoutToTail;
 
-    //Exactly why concrete classes as super classes is BAD. 
-    //These will need to be overridden
+    // ****NOTE****
+    //This is exactly why concrete classes as super classes is a BAD idea. 
+    //This will need to be overridden
+    // All fish have their own way of swimming 
     public void swim() {
         System.out.println("Unknown");
     }

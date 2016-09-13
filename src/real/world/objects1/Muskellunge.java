@@ -6,7 +6,9 @@ package real.world.objects1;
  * @author cgonz
  */
 public class Muskellunge extends FreshwaterFish {
-
+    // Certain muskie have certain patterns on their bodies
+    // ex: spotted, tiger stripes, barred
+   
     private String muskieBodyPattern;
     
     public String getMuskieBodyPattern() {
@@ -17,7 +19,7 @@ public class Muskellunge extends FreshwaterFish {
         //requires validation
         this.muskieBodyPattern = muskieBodyPattern;
     }
-
+    
     @Override
     public void swim() {
         System.out.println("I swim horizontally and use my fins");

@@ -6,6 +6,8 @@ package real.world.objects2;
  * @author cgonz
  */
 public class Muskellunge extends FreshwaterFish {
+    // Certain muskie have certain patterns on their bodies
+    // ex: spotted, tiger stripes, barred
 
     private String muskieBodyPattern;
 

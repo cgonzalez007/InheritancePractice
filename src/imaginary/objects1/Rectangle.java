@@ -5,8 +5,10 @@ package imaginary.objects1;
  *
  * @author cgonz
  */
-public class Rectangle implements Quadrilateral {
+public class Rectangle implements ConvexQuadrilateral {
 
+    // rectangles have a length and width which are used to find area and
+    // perimeter
     private double length;
     private double width;
 

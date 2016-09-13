@@ -20,6 +20,8 @@ public abstract class FreshwaterFish implements Fish {
     public FreshwaterFish() {
     }
 
+    // All Freshwater Fish take in Freshwater. Each type of freshwater fish 
+    //might have their own specific way of doing so.
     public abstract void takeInFreshwater();
 
     @Override

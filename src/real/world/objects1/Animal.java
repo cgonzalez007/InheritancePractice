@@ -13,12 +13,17 @@ package real.world.objects1;
  */
 public interface Animal {
 
+    // All animals should have a name
     public abstract void setName(String name);
 
     public abstract String getName();
 
+    // All animals have a way of taking in oxygen. Notice I did not use the word
+    // "breathe" for the method name. 
     public abstract void takeInOxygen();
 
+    // All animals need to find food. As to what and how, we will leave for the 
+    // concrete classes
     public abstract void searchForFood();
 
 }
