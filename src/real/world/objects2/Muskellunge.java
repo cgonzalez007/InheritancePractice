@@ -39,7 +39,7 @@ public class Muskellunge extends FreshwaterFish {
 
     @Override
     public void takeInOxygen() {
-        System.out.println("I Breathe through my gills.");
+        System.out.println("I take in oxygen through the use of my gills.");
 
     }
 }
