@@ -18,29 +18,29 @@ public class Rectangle implements ConvexQuadrilateral {
     }
 
     @Override
-    public double calcArea() {
+    public final double calcArea() {
         return getLength() * getWidth();
     }
 
     @Override
-    public double calcPerimeter() {
+    public final double calcPerimeter() {
         return (2 * getLength()) + (2 * getWidth());
     }
 
-    public double getLength() {
+    public final double getLength() {
         return length;
     }
 
-    public void setLength(double length) {
+    public final void setLength(double length) {
         //requires validation
         this.length = length;
     }
 
-    public double getWidth() {
+    public final double getWidth() {
         return width;
     }
 
-    public void setWidth(double width) {
+    public final void setWidth(double width) {
         //requires validation
         this.width = width;
     }

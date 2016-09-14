@@ -15,30 +15,30 @@ public class Muskellunge extends FreshwaterFish {
         return muskieBodyPattern;
     }
 
-    public void setMuskieBodyPattern(String muskieBodyPattern) {
+    public final void setMuskieBodyPattern(String muskieBodyPattern) {
         //requires validation
         this.muskieBodyPattern = muskieBodyPattern;
     }
 
     @Override
-    public void swim() {
+    public final void swim() {
         System.out.println("I swim horizontally and use my fins");
     }
 
     @Override
-    public void searchForFood() {
+    public final void searchForFood() {
         System.out.println("I search for small fish and small animals including"
                 + " birds and frogs");
     }
 
     @Override
-    public void takeInFreshwater() {
+    public final void takeInFreshwater() {
         System.out.println("I'm taking in Freshwater since I'm a freshwater "
                 + "fish");
     }
 
     @Override
-    public void takeInOxygen() {
+    public final void takeInOxygen() {
         System.out.println("I take in oxygen through the use of my gills.");
 
     }

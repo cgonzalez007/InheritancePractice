@@ -13,10 +13,10 @@ package real.world.objects1;
  */
 public interface Animal {
 
-    // All animals should have a name
-    public abstract void setName(String name);
+    // All animals have some sort of genetic variation
+    public abstract void setGeneticVariation(String name);
 
-    public abstract String getName();
+    public abstract String getGeneticVariation();
 
     // All animals have a way of taking in oxygen. Notice I did not use the word
     // "breathe" for the method name. 

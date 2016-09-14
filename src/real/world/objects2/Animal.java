@@ -16,12 +16,14 @@ public abstract class Animal {
 
     // Dictating here that all animals should have a name
     private String name;
-
-    public String getName() {
+    // May not be a good idea in terms of how animals get named (Certain animals
+    // get grouped differently which may cause for a slight name difference,
+    // Ex: "Tiger" Muskie)
+    public final String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public final void setName(String name) {
         //requires validation
         this.name = name;
     }

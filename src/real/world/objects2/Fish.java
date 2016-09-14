@@ -15,20 +15,20 @@ public abstract class Fish extends Animal {
     // All fish have their own way of swimming 
     public abstract void swim();
 
-    public double getLengthFromSnoutToTail() {
+    public final double getLengthFromSnoutToTail() {
         return lengthFromSnoutToTail;
     }
 
-    public void setLengthFromSnoutToTail(double lengthFromSnoutToTail) {
+    public final void setLengthFromSnoutToTail(double lengthFromSnoutToTail) {
         //requires validation
         this.lengthFromSnoutToTail = lengthFromSnoutToTail;
     }
 
-    public String getFinClassification() {
+    public final String getFinClassification() {
         return finClassification;
     }
 
-    public void setFinClassification(String finClassification) {
+    public final void setFinClassification(String finClassification) {
         //requires validation
         this.finClassification = finClassification;
     }

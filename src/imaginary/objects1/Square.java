@@ -17,20 +17,20 @@ public class Square implements ConvexQuadrilateral {
     }
 
     @Override
-    public double calcArea() {
+    public final double calcArea() {
         return Math.pow(getLengthForEachSide(), 2);
     }
 
     @Override
-    public double calcPerimeter() {
+    public final double calcPerimeter() {
         return NUMBER_OF_SIDES * getLengthForEachSide();
     }
 
-    public double getLengthForEachSide() {
+    public final double getLengthForEachSide() {
         return lengthForEachSide;
     }
 
-    public void setLengthForEachSide(double lengthForEachSide) {
+    public final void setLengthForEachSide(double lengthForEachSide) {
         //requires validation
         this.lengthForEachSide = lengthForEachSide;
     }
