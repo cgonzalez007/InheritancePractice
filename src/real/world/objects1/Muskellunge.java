@@ -6,26 +6,26 @@ package real.world.objects1;
  * @author cgonz
  */
 public class Muskellunge extends FreshwaterFish {
-    // Certain muskie have certain patterns on their bodies
-    // ex: spotted, tiger stripes, barred
 
     private String geneticVariation;
-    private String muskieBodyPattern;
+    private String bodyPattern;
     private String finClassification;
 
     public Muskellunge(String geneticVariation, String muskieBodyPattern, String finClassification) {
         this.geneticVariation = geneticVariation;
-        this.muskieBodyPattern = muskieBodyPattern;
+        this.bodyPattern = muskieBodyPattern;
         this.finClassification = finClassification;
     }
-    
-    public final String getMuskieBodyPattern() {
-        return muskieBodyPattern;
+
+    // Certain muskie have certain patterns on their bodies
+    // ex: spotted, tiger stripes, barred
+    public final String getBodyPattern() {
+        return bodyPattern;
     }
 
-    public final void setMuskieBodyPattern(String muskieBodyPattern) {
+    public final void setBodyPattern(String bodyPattern) {
         //requires validation
-        this.muskieBodyPattern = muskieBodyPattern;
+        this.bodyPattern = bodyPattern;
     }
 
     @Override
@@ -56,10 +56,10 @@ public class Muskellunge extends FreshwaterFish {
         return geneticVariation;
     }
 
-    // Muskie variations are determined by their body patterns
     @Override
     public final void setGeneticVariation(String geneticVariation) {
-        //requires validation!
+        //this method would most likely take the bodyPattern property and 
+        //finClassification property to determine geneticVariation
         this.geneticVariation = geneticVariation;
     }
 

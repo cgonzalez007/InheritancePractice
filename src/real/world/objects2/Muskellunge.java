@@ -6,18 +6,24 @@ package real.world.objects2;
  * @author cgonz
  */
 public class Muskellunge extends FreshwaterFish {
-    // Certain muskie have certain patterns on their bodies
-    // ex: spotted, tiger stripes, barred
 
-    private String muskieBodyPattern;
+    private String geneticVariation;
+    private String bodyPattern;
+    private String finClassification;
 
-    public String getMuskieBodyPattern() {
-        return muskieBodyPattern;
+    public Muskellunge(String geneticVariation, String bodyPattern, String finClassification) {
+        this.geneticVariation = geneticVariation;
+        this.bodyPattern = bodyPattern;
+        this.finClassification = finClassification;
     }
 
-    public final void setMuskieBodyPattern(String muskieBodyPattern) {
+    public final String getBodyPattern() {
+        return bodyPattern;
+    }
+
+    public final void setBodyPattern(String bodyPattern) {
         //requires validation
-        this.muskieBodyPattern = muskieBodyPattern;
+        this.bodyPattern = bodyPattern;
     }
 
     @Override
@@ -41,5 +47,30 @@ public class Muskellunge extends FreshwaterFish {
     public final void takeInOxygen() {
         System.out.println("I take in oxygen through the use of my gills.");
 
+    }
+
+    @Override
+    public final String getGeneticVariation() {
+        return geneticVariation;
+    }
+
+    @Override
+    public final void setGeneticVariation(String geneticVariation) {
+        //this method would most likely take the bodyPattern property and 
+        //finClassification property to determine geneticVariation
+        this.geneticVariation = geneticVariation;
+    }
+
+    // Certain Muskie have different fin patterns. 
+    // Ex: Spotted Muskie tend to have pointier tails compared to a Tiger Muskie
+    @Override
+    public final String getFinClassification() {
+        return finClassification;
+    }
+
+    @Override
+    public final void setFinClassification(String finClassification) {
+        //requires validation
+        this.finClassification = finClassification;
     }
 }

@@ -5,7 +5,7 @@ package real.world.objects3;
  *
  * @author cgonz
  * No interfaces or abstract classes used for this version
- * The real dangerous of inheritance are exposed in this demo,
+ * The real dangers of inheritance are exposed in this demo,
  * especially with concrete classes being the super classes. 
  * 
  * Animal super class as concrete class, Fish concrete class extending Animal,
@@ -17,16 +17,21 @@ package real.world.objects3;
  */
 public class Animal {
 
-    // Dictating that all Animals need to have a name
-    private String name;
+    // Dictating that all Animals have some sort of genetic variation
+    private String geneticVariation;
 
-    public String getName() {
-        return name;
+    public Animal() {
     }
 
-    public void setName(String name) {
+    public final String getGeneticVariation() {
+        return geneticVariation;
+    }
+
+    // Bad idea here: It may differ when it comes to determining an animal's 
+    // genetic variation
+    public final void setGeneticVariation(String geneticVariation) {
         //requires validation
-        this.name = name;
+        this.geneticVariation = geneticVariation;
     }
     // ****NOTE****
     //This is exactly why concrete classes as super classes is a BAD idea. 

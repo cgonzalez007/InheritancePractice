@@ -14,7 +14,7 @@ package real.world.objects1;
 public interface Animal {
 
     // All animals have some sort of genetic variation
-    public abstract void setGeneticVariation(String name);
+    public abstract void setGeneticVariation(String geneticVariation);
 
     public abstract String getGeneticVariation();
 

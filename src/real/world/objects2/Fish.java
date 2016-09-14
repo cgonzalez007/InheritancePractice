@@ -7,10 +7,13 @@ package real.world.objects2;
  */
 public abstract class Fish extends Animal {
 
-    // All Fish have some sort of fin classification as well as a length 
-    // from their snout to their tail
-    private String finClassification;
+    // All Fish have a length from their snout to their tail
     private double lengthFromSnoutToTail;
+
+    // Dictating that all fish have some sort of fin classification
+    public abstract String getFinClassification();
+
+    public abstract void setFinClassification(String finClassification);
 
     // All fish have their own way of swimming 
     public abstract void swim();
@@ -22,15 +25,6 @@ public abstract class Fish extends Animal {
     public final void setLengthFromSnoutToTail(double lengthFromSnoutToTail) {
         //requires validation
         this.lengthFromSnoutToTail = lengthFromSnoutToTail;
-    }
-
-    public final String getFinClassification() {
-        return finClassification;
-    }
-
-    public final void setFinClassification(String finClassification) {
-        //requires validation
-        this.finClassification = finClassification;
     }
 
 }

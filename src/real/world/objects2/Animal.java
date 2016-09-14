@@ -10,23 +10,15 @@ package real.world.objects2;
  * Freshwater Abstract Class extending Fish,
  * Muskellunge concrete class extending Freshwater Fish
  * 
- * No interface utilization = more dangerous
+ * No interface utilization =  much riskier
  */
 public abstract class Animal {
 
-    // Dictating here that all animals should have a name
-    private String name;
-    // May not be a good idea in terms of how animals get named (Certain animals
-    // get grouped differently which may cause for a slight name difference,
-    // Ex: "Tiger" Muskie)
-    public final String getName() {
-        return name;
-    }
+    // Dictating here that all animals should have some sort of genetic 
+    // variation
+    public abstract String getGeneticVariation();
 
-    public final void setName(String name) {
-        //requires validation
-        this.name = name;
-    }
+    public abstract void setGeneticVariation(String geneticVariation);
 
     // All animals have a way of taking in oxygen. Notice I did not use the word
     // "breathe" for the method name. 
