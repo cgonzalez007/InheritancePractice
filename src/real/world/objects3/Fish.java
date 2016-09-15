@@ -15,12 +15,9 @@ public class Fish extends Animal {
     // concrete classes shouldn't be used for super classes. 
     // They DO NOT allow abstract methods. Any concrete methods will get  
     // inherited invisibly
-    
-    private String finClassification;
     private double lengthFromSnoutToTail;
 
-    public Fish(String finClassification, double lengthFromSnoutToTail) {
-        this.finClassification = finClassification;
+    public Fish(double lengthFromSnoutToTail) {
         this.lengthFromSnoutToTail = lengthFromSnoutToTail;
     }
 
@@ -30,15 +27,6 @@ public class Fish extends Animal {
     // All fish have their own way of swimming 
     public void swim() {
         System.out.println("Unknown");
-    }
-
-    public final String getFinClassification() {
-        return finClassification;
-    }
-
-    public final void setFinClassification(String finClassification) {
-        //requires validation
-        this.finClassification = finClassification;
     }
 
     public final double getLengthFromSnoutToTail() {

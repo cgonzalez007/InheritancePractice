@@ -7,8 +7,8 @@ package real.world.objects3;
  */
 public class FreshwaterFish extends Fish {
 
-    public FreshwaterFish(String finClassification, double lengthFromSnoutToTail) {
-        super(finClassification, lengthFromSnoutToTail);
+    public FreshwaterFish(double lengthFromSnoutToTail) {
+        super(lengthFromSnoutToTail);
     }
 
     // ****NOTE****

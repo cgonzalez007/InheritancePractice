@@ -10,9 +10,13 @@ public class Muskellunge extends FreshwaterFish {
     // ex: spotted, tiger stripes, barred
 
     private String bodyPattern;
+    private String finClassification;
 
-    public Muskellunge(String finClassification, double lengthFromSnoutToTail) {
-        super(finClassification, lengthFromSnoutToTail);
+    public Muskellunge(String bodyPattern, String finClassification,
+            double lengthFromSnoutToTail) {
+        super(lengthFromSnoutToTail);
+        this.bodyPattern = bodyPattern;
+        this.finClassification = finClassification;
     }
 
     public final String getBodyPattern() {
@@ -47,5 +51,28 @@ public class Muskellunge extends FreshwaterFish {
     public final void takeInOxygen() {
         System.out.println("I take in oxygen through the use of my gills.");
 
+    }
+
+    public final String getFinClassification() {
+        return finClassification;
+    }
+
+    public final void setFinClassification(String finClassification) {
+        //requires validation
+        //Mock validation
+        if (finClassification.equalsIgnoreCase("Muskie Fin Variation Type 1")) {
+            this.finClassification = finClassification;
+        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
+                + "Type 2")) {
+            this.finClassification = finClassification;
+        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
+                + "Type 3")) {
+            this.finClassification = finClassification;
+        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
+                + "Type 4")) {
+            this.finClassification = finClassification;
+        } else {
+            System.out.println("Invalid Fin Variation");
+        }
     }
 }
