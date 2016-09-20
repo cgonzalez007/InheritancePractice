@@ -1,4 +1,3 @@
-
 package real.world.objects1;
 
 /**
@@ -59,6 +58,7 @@ public class Muskellunge extends FreshwaterFish {
 
     @Override
     public final void setGeneticVariation(String geneticVariation) {
+        //requires validation
         //this method would most likely take the bodyPattern property and 
         //finClassification property to determine geneticVariation
         this.geneticVariation = geneticVariation;
@@ -74,21 +74,24 @@ public class Muskellunge extends FreshwaterFish {
     @Override
     public final void setFinClassification(String finClassification) {
         //requires validation
-        //Mock validation
-        if (finClassification.equalsIgnoreCase("Muskie Fin Variation Type 1")) {
+        if (isValidFinClassification(finClassification)) {
             this.finClassification = finClassification;
-        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
-                + "Type 2")) {
-            this.finClassification = finClassification;
-        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
-                + "Type 3")) {
-            this.finClassification = finClassification;
-        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
-                + "Type 4")) {
-            this.finClassification = finClassification;
-        } else {
-            System.out.println("Invalid Fin Variation");
         }
+
+    }
+
+    //Mock validation
+    private final boolean isValidFinClassification(String finClassification) {
+        boolean isValid = false;
+        if (finClassification.equalsIgnoreCase("Muskie Fin Variation Type 1")
+                || finClassification.equalsIgnoreCase("Muskie Fin Variation "
+                        + "Type 2") || finClassification.equalsIgnoreCase(
+                        "Muskie Fin Variation Type 3") || finClassification.
+                equalsIgnoreCase("Muskie Fin Variation Type 4")) {
+            isValid = true;
+        }
+
+        return isValid;
     }
 
     @Override

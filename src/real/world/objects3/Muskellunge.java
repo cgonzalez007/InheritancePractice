@@ -59,20 +59,24 @@ public class Muskellunge extends FreshwaterFish {
 
     public final void setFinClassification(String finClassification) {
         //requires validation
-        //Mock validation
-        if (finClassification.equalsIgnoreCase("Muskie Fin Variation Type 1")) {
+        if (isValidFinClassification(finClassification)) {
             this.finClassification = finClassification;
-        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
-                + "Type 2")) {
-            this.finClassification = finClassification;
-        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
-                + "Type 3")) {
-            this.finClassification = finClassification;
-        } else if (finClassification.equalsIgnoreCase("Muskie Fin Variation "
-                + "Type 4")) {
-            this.finClassification = finClassification;
-        } else {
-            System.out.println("Invalid Fin Variation");
         }
+
     }
+
+    //Mock validation
+    private final boolean isValidFinClassification(String finClassification) {
+        boolean isValid = false;
+        if (finClassification.equalsIgnoreCase("Muskie Fin Variation Type 1")
+                || finClassification.equalsIgnoreCase("Muskie Fin Variation "
+                        + "Type 2") || finClassification.equalsIgnoreCase(
+                        "Muskie Fin Variation Type 3") || finClassification.
+                equalsIgnoreCase("Muskie Fin Variation Type 4")) {
+            isValid = true;
+        }
+
+        return isValid;
+    }
+
 }
